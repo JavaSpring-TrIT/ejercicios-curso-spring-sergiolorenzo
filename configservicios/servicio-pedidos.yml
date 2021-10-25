@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url=jdbc:mysql://db4free.net:3306/cursomicro
-    username=cursomicro
-    password=cursomicro
+    url:jdbc:mysql://db4free.net:3306/cursomicro
+    username:cursomicro
+    password:cursomicro
   jpa:
     hibernate:
       naming.implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
