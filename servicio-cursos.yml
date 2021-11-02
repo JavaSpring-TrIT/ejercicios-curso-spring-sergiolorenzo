@@ -13,6 +13,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
   instance:
-    instance-id: ${random.int[7000,7500]}:${spring.application.name}
+    instance-id: ${random.value}:${spring.application.name}
 server:
-  port: 8080
+  port: 0
