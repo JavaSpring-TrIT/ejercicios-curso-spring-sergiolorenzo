@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/tiendavirtual?serverTimezone=UTC
-    username: root
-    password: root   
+    url: jdbc:mysql://db4free.net:3306/cursomicro
+    username: cursomicro
+    password: cursomicro
   jpa:
     hibernate:
       naming.implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
@@ -12,5 +12,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${random.value}:${spring.application.name}
 server:
-  port: 9001 
+  port: 0
