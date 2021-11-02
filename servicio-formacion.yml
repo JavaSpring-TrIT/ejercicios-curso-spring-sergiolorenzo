@@ -12,7 +12,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
-  instance:
-    instance-id: ${random.int[7501,7999]}:${spring.application.name}
 server:
-  port: 9002
+  port: 9001
